@@ -12,4 +12,4 @@ github_username:  padsbanger
 
 # Build settings
 markdown: kramdown
-css_dir: css/
+css_dir: css
