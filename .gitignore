@@ -1,2 +1,10 @@
 _site/
 .sass-cache/
+.DS_Store
+
+.node_cache
+node_modules
+.sass-cache/
+.bower-cache/
+.bower-tmp/
+.bower-registry/
