@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 
     concurrent: {
       target: {
-        tasks: ['jekyll:build', 'connect:server', 'watch', 'open'],
+        tasks: ['jekyll:build', 'connect:server', 'watch', ],
         options: {
           logConcurrentOutput: true
         }
@@ -67,18 +67,18 @@ module.exports = function(grunt) {
         files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
         tasks: ['sass:dev']
       },
-      livereload: {
+      jekyll: {
         options: {
           livereload: {
             port: 9000
           }
         },
         files: [
-          '_config.yml',
-          '{,*/}*.{html, markdown}',
-          '<%= project.assets %>/css/*.css',
-          '<%= project.assets %>/js/{,*/}*.js',
-          '<%= project.assets %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          '*.html',
+          '_includes/*',
+          '_layouts/*',
+          '_posts/*'
+
         ],
         tasks: ['jekyll:build']
       }
