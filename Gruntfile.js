@@ -24,18 +24,28 @@ module.exports = function(grunt) {
     },
 
     jekyll: {
-      server: {
-        auto: true,
-        server: true,
-        server_port: 1337,
+      build: {
         exclude: ['node_modules'],
-        dest: './_site'
+        dest: './_site',
+        watch: false,
+      }
+    },
+
+    connect: {
+      server: {
+        options: {
+          port: 1337,
+          hostname: '',
+          base: '_site/',
+          livereload: 9000,
+          open: true
+        }
       }
     },
 
     concurrent: {
       target: {
-        tasks: ['jekyll:server', 'watch', 'open'],
+        tasks: ['jekyll:build', 'connect:server', 'watch', 'open'],
         options: {
           logConcurrentOutput: true
         }
@@ -59,7 +69,9 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          livereload: true
+          livereload: {
+            port: 9000
+          }
         },
         files: [
           '_config.yml',
@@ -67,13 +79,14 @@ module.exports = function(grunt) {
           '<%= project.assets %>/css/*.css',
           '<%= project.assets %>/js/{,*/}*.js',
           '<%= project.assets %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-        ]
+        ],
+        tasks: ['jekyll:build']
       }
     }
   });
 
   grunt.registerTask('default', [
-    'concurrent:target'
+    'jekyll:build', 'connect:server', 'watch'
   ]);
 
   /**
