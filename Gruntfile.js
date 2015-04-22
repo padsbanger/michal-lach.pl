@@ -23,7 +23,6 @@ module.exports = function(grunt) {
       ]
     },
 
-
     jekyll: {
       server: {
         auto: true,

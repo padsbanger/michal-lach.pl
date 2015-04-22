@@ -13,3 +13,4 @@ github_username:  padsbanger
 # Build settings
 markdown: kramdown
 css_dir: css
+exclude: [node_modules]
