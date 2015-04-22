@@ -8,3 +8,5 @@ node_modules
 .bower-cache/
 .bower-tmp/
 .bower-registry/
+
+*.log

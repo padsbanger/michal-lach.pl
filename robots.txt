@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://michal-lach.pl/sitemap.xml
+Disallow:

@@ -1,0 +1,27 @@
+{
+  "name": "padsbanger.github.io",
+  "version": "0.0.1",
+  "description": "Jekyll build for michal-lach.pl",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:padsbanger/padsbanger.github.io.git"
+  },
+  "author": "Michal Lach",
+  "license": "MIT",
+  "homepage": "http://padsbanger.github.io",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-shell": "~0.6.1",
+    "grunt-jekyll": "~0.3.9",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-uglify": "^0.8.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-concurrent": "~0.3.1",
+    "time-grunt": "^1.1.0",
+    "grunt-open": "~0.2.0",
+    "matchdep": "~0.3.0"
+  }
+}
