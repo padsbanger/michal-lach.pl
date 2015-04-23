@@ -25,7 +25,6 @@ module.exports = function(grunt) {
 
     jekyll: {
       build: {
-        exclude: ['node_modules'],
         dest: './_site',
         watch: false,
       }
@@ -39,6 +38,14 @@ module.exports = function(grunt) {
           base: '_site/',
           livereload: 9000,
           open: true
+        }
+      }
+    },
+
+    less: {
+      dev: {
+        files: {
+          'src/styles/css/style.css': 'src/styles/less/main.less'
         }
       }
     },
@@ -63,9 +70,14 @@ module.exports = function(grunt) {
         files: '<%= project.src %>/js/{,*/}*.js',
         tasks: ['concat:dev', 'jshint']
       },
-      sass: {
-        files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
-        tasks: ['sass:dev']
+      less: {
+        options: {
+          livereload: {
+            port: 9000
+          }
+        },
+        files: 'src/styles/less/*.less',
+        tasks: ['less:dev']
       },
       jekyll: {
         options: {
@@ -77,7 +89,8 @@ module.exports = function(grunt) {
           '*.html',
           '_includes/*',
           '_layouts/*',
-          '_posts/*'
+          '_posts/*',
+          'src/**/*'
 
         ],
         tasks: ['jekyll:build']

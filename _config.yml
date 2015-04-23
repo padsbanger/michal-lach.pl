@@ -1,10 +1,8 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Michał Lach
+email: kontakt@michal-lach.pl
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  HTML5, CSS3 & Angular.js enginner from Poland, Gdynia.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://michal-lach.pl" # the base hostname & protocol for your site
 twitter_username: padsbanger
@@ -12,6 +10,5 @@ github_username:  padsbanger
 
 # Build settings
 markdown: kramdown
-css_dir: css
-exclude: ['README.md', 'src/', 'node_modules', 'package.json', 'Gruntfile.js']
+exclude: ['README.md', 'node_modules', 'package.json', 'Gruntfile.js']
 permalink: /:year/:month/:title
