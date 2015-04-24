@@ -11,4 +11,4 @@ github_username:  padsbanger
 # Build settings
 markdown: kramdown
 exclude: ['README.md', 'node_modules', 'package.json', 'Gruntfile.js']
-permalink: /:year/:month/:title
+permalink: /:title

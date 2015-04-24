@@ -66,10 +66,6 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      concat: {
-        files: '<%= project.src %>/js/{,*/}*.js',
-        tasks: ['concat:dev', 'jshint']
-      },
       less: {
         options: {
           livereload: {
@@ -101,15 +97,4 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'jekyll:build', 'connect:server', 'watch'
   ]);
-
-  /**
-   * Build task
-   * Run `grunt build` on the command line
-   * Then compress all JS/CSS files
-   */
-  grunt.registerTask('build', [
-    'sass:dist',
-    'uglify'
-  ]);
-
 };
