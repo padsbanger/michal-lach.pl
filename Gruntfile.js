@@ -8,21 +8,6 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    /**
-     * Set project info
-     */
-    project: {
-      src: 'src',
-      app: '',
-      assets: 'assets',
-      css: [
-        '<%= project.src %>/scss/style.scss'
-      ],
-      js: [
-        '<%= project.src %>/js/*.js'
-      ]
-    },
-
     jekyll: {
       build: {
         dest: './_site',
@@ -46,6 +31,12 @@ module.exports = function(grunt) {
       dev: {
         files: {
           'src/styles/css/style.css': 'src/styles/less/main.less'
+        },
+        options: {
+          plugins: [
+            new(require('less-plugin-clean-css'))()
+          ],
+          compress: true
         }
       }
     },
@@ -94,7 +85,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', [
+  grunt.registerTask('default', ['less',
     'jekyll:build', 'connect:server', 'watch'
   ]);
 };
