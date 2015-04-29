@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="page-heading">Projects</h1>
+  <h1>Projects</h1>
   {% for post in paginator.posts %}
     <div class="view view-first">
       <img src="/img/projects/{{ post.title | prepend: site.baseurl }}.png" alt="{{ post.title }}"/>
