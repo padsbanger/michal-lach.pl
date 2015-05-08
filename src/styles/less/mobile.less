@@ -1,0 +1,35 @@
+@media only screen and (max-width: 900px) {
+  header {
+    position: static;
+    width: 100%;
+    .profile {
+      margin: 10px auto 10px;
+    }
+  }
+  .content {
+    margin: 20px 20px 10px 20px;
+  }
+  .timeline {
+    width: 80%;
+  }
+
+  .view {
+    margin: 10px 10px 10px 0;
+    border: 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .view {
+    width: auto;
+    .mask {
+      width: inherit;
+    }
+  }
+  .timeline .ribbon {
+    display: none;
+  }
+  .timeline .data {
+    margin-left: 0px;
+  }
+}
