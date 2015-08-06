@@ -15,7 +15,7 @@ gem install jekyll
 Install Node.js and Grunt:
 
 ```js
-npm install -g grunt
+npm install -g grunt-cli
 ```
 
 ## Running
