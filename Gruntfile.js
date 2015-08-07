@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     less: {
       dev: {
         files: {
-          'src/styles/css/style.css': 'src/styles/less/main.less'
+          'src/styles/css/style.css': 'src/styles/less/styles.less'
         },
         options: {
           plugins: [

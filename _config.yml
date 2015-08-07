@@ -12,5 +12,11 @@ github_username:  padsbanger
 markdown: kramdown
 exclude: ['README.md', 'node_modules', 'package.json', 'Gruntfile.js']
 permalink: /projects/:title
-paginate: 6
-paginate_path: "/projects/:num/"
+
+links:
+  - title: about
+    url: /about
+  - title: work
+    url: /work
+  - title: hire me
+    url: /hire-me
