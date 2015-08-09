@@ -20,3 +20,13 @@ links:
     url: /work
   - title: hire me
     url: /hire-me
+
+social:
+  - title: Github
+    url: https://github.com/padsbanger
+  - title: Linkedin
+    url: https://pl.linkedin.com/pub/michał-lach/6b/54a/988
+  - title: Facebook
+    url: https://www.facebook.com/padsbanger
+  - title: Twitter
+    url: https://twitter.com/padsbanger

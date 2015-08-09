@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html>
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-
-  <script src="{{ "src/js/jquery.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "src/js/owl.carousel.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "src/js/app.js" | prepend: site.baseurl }}"></script>
-  </body>
+<body>
+  {% include header.html %}
+  <div class="container">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+  <script src="{{ " src/js/jquery.js " | prepend: site.baseurl }}"></script>
+  <script src="{{ " src/js/owl.carousel.min.js " | prepend: site.baseurl }}"></script>
+  <script src="{{ " src/js/app.js " | prepend: site.baseurl }}"></script>
+</body>
 
 </html>

@@ -1,4 +1,28 @@
 <footer>
-
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga impedit laudantium numquam at reiciendis minima nesciunt necessitatibus quaerat ipsa quas eveniet, odit nihil tenetur culpa, cumque. Odit neque perferendis laboriosam?</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus odio iste iure natus deleniti error incidunt earum, quam quia tenetur at maxime. Deleniti tempore quis aperiam et, numquam sit sunt!</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, magni culpa, quibusdam in neque nam porro, laudantium sed, tenetur incidunt possimus. Quae aliquid repellat, voluptatibus. Ea eligendi necessitatibus, fugit labore.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-links">
+    <div class="container">
+      <div class="row">
+        <nav>
+          {% for link in site.links %}
+          <a href="{{ link.url }}">{{ link.title }}</a> {% endfor %}
+        </nav>
+      </div>
+    </div>
+  </div>
 </footer>

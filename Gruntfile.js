@@ -41,15 +41,6 @@ module.exports = function(grunt) {
       }
     },
 
-    concurrent: {
-      target: {
-        tasks: ['jekyll:build', 'connect:server', 'watch', ],
-        options: {
-          logConcurrentOutput: true
-        }
-      }
-    },
-
     open: {
       server: {
         path: 'http://localhost:1337'
@@ -63,8 +54,8 @@ module.exports = function(grunt) {
             port: 9000
           }
         },
-        files: 'src/styles/less/*.less',
-        tasks: ['less:dev']
+        files: ['src/styles/less/*.less', 'src/styles/**/*.less'],
+        tasks: ['less:dev', 'jekyll:build']
       },
       jekyll: {
         options: {
