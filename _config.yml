@@ -14,3 +14,6 @@ exclude: ['README.md', 'node_modules', 'package.json', 'Gruntfile.js']
 permalink: /projects/:title
 paginate: 6
 paginate_path: "/projects/:num/"
+
+gems:
+  - jekyll-seo-tag
