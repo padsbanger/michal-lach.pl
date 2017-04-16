@@ -24,8 +24,8 @@ $document.addEventListener("DOMContentLoaded", function(event) {
     blueoceanmedia.innerHTML = "<span>"+ calculateDuration('2013-06-01', '2013-08-01' , 'months') + "</span> months";
     misys.innerHTML = "<span>"+ calculateDuration('2013-08-01', '2015-04-01' , 'months') + "</span> months";
     pjwstk.innerHTML = "<span>"+ calculateDuration('2009-09-01', '2013-02-01' , 'years') + "</span> years";
-
   }
+  
   if(window.location.href.indexOf('work') !== -1) {
     generateDynamicDates();
   }
