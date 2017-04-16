@@ -19,7 +19,7 @@
     "grunt-contrib-less": "^1.0.1",
     "grunt-contrib-uglify": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-jekyll": "~0.3.9",
+    "grunt-jekyll": "0.4.6",
     "grunt-open": "~0.2.0",
     "grunt-shell": "~0.6.1",
     "less": "^2.5.0",

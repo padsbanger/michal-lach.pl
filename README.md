@@ -18,6 +18,12 @@ Install Node.js and Grunt:
 npm install -g grunt
 ```
 
+Install gem for Jekyll
+
+```ruby
+gem install jekyll-seo-tag jekyll-paginate
+```
+
 ## Running
 
 Go to main directory (where Grunfile.js is) and type:
