@@ -1,6 +1,4 @@
-var $document = document
-
-$document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
   //do work
   function calculateDuration(start, end, unit) {
     var start = moment(start);
@@ -9,6 +7,7 @@ $document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   function generateDynamicDates() {
+    var $document = document;
     var gratka = $document.querySelector('.gratka'),
       schibsted = $document.querySelector('.schibsted');
       epam = $document.querySelector('.epam');
@@ -25,7 +24,7 @@ $document.addEventListener("DOMContentLoaded", function(event) {
     misys.innerHTML = "<span>"+ calculateDuration('2013-08-01', '2015-04-01' , 'months') + "</span> months";
     pjwstk.innerHTML = "<span>"+ calculateDuration('2009-09-01', '2013-02-01' , 'years') + "</span> years";
   }
-  
+
   if(window.location.href.indexOf('work') !== -1) {
     generateDynamicDates();
   }
