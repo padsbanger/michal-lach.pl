@@ -9,4 +9,7 @@ node_modules
 .bower-tmp/
 .bower-registry/
 
+src/js/app.concat.js
+*.js.map
+
 *.log

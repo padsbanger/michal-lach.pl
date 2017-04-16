@@ -27,6 +27,27 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      options: {
+        stripBanners: true,
+      },
+      dist: {
+        src: ['src/js/moment.js', 'src/js/app.js'],
+        dest: 'src/js/app.concat.js',
+      },
+    },
+
+    uglify: {
+      app: {
+        options : {
+          sourceMap: true,
+        },
+        files: {
+          'src/js/app.min.js': ['src/js/app.concat.js']
+        }
+      }
+    },
+
     less: {
       dev: {
         files: {
@@ -66,6 +87,15 @@ module.exports = function(grunt) {
         files: 'src/styles/less/*.less',
         tasks: ['less:dev']
       },
+      js: {
+        options: {
+          livereload: {
+            port: 9000
+          }
+        },
+        files: 'src/js/*.js',
+        tasks: ['concat', 'uglify:app']
+      },
       jekyll: {
         options: {
           livereload: {
@@ -85,7 +115,12 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['less',
-    'jekyll:build', 'connect:server', 'watch'
+  grunt.registerTask('default', [
+    'less',
+    'concat',
+    'uglify:app',
+    'jekyll:build',
+    'connect:server',
+    'watch'
   ]);
 };
