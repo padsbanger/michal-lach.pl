@@ -10,7 +10,6 @@
   "license": "MIT",
   "homepage": "http://padsbanger.github.io",
   "devDependencies": {
-    "eslint-config-airbnb": "^14.1.0",
     "grunt": "~0.4.2",
     "grunt-concurrent": "~0.3.1",
     "grunt-contrib-clean": "^0.6.0",
