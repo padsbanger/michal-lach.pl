@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         stripBanners: true,
       },
       dist: {
-        src: ['src/js/moment.js','src/js/app.js'],
+        src: ['src/js/moment.js','src/js/jquery.js','src/js/app.js'],
         dest: 'src/js/app.concat.js',
       },
     },

@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-  //do work
+$(function() {
   function calculateDuration(start, end, unit) {
     var start = moment(start);
     var end = moment(end || new Date());
