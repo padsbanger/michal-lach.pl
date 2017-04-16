@@ -43,7 +43,7 @@ module.exports = function(grunt) {
           sourceMap: true,
         },
         files: {
-          'src/js/app.min.js': ['src/js/app.concat.js']
+          'src/js/app.min.js': ['src/js/app.min.js']
         }
       }
     },
