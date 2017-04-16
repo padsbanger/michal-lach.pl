@@ -26,7 +26,7 @@ Go to main directory (where Grunfile.js is) and type:
 grunt
 ```
 
-##Development
+## Development
 
 To add new projects create new *.html* file in *_posts* directory.
 
