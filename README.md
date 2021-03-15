@@ -1,39 +1,48 @@
-# michal-lach.pl [![Build Status](https://travis-ci.org/padsbanger/padsbanger.github.io.svg?branch=master)](https://travis-ci.org/padsbanger/padsbanger.github.io)
-Source code for page [michal-lach.pl](http://michal-lach.pl/ "michal-lach.pl")
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby minimal starter
+</h1>
 
-Build on top of Jekyll, Less and Grunt.js.
+## 🚀 Quick start
 
-## Installing
+1.  **Create a Gatsby site.**
 
-Install Ruby and get Jekyll:
+    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
-```ruby
-gem update
-gem install jekyll
-```
+    ```shell
+    # create a new Gatsby site using the minimal starter
+    npm init gatsby
+    ```
 
-Install Node.js and Grunt:
+2.  **Start developing.**
 
-```js
-npm install -g grunt
-```
+    Navigate into your new site’s directory and start it up.
 
-Install gem for Jekyll
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-```ruby
-gem install jekyll-seo-tag jekyll-paginate
-```
+3.  **Open the code and start customizing!**
 
-## Running
+    Your site is now running at http://localhost:8000!
 
-Go to main directory (where Grunfile.js is) and type:
+    Edit `src/pages/index.js` to see your site update in real-time!
 
-```js
-grunt
-```
+4.  **Learn more**
 
-## Development
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-To add new projects create new *.html* file in *_posts* directory.
+    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-Images goes to *img* and styles to *src/styles/less*.
+    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
